@@ -52,6 +52,7 @@ public class PartyService {
 			.from(vertex.getLeft())
 			.to(vertex.getRight())
 			.status(searchRequestDTO.getStatus())
+			.foodCategories(searchRequestDTO.getFoodCategories())
 			.build();
 
 		Page<Party> page = partyRepository.search(partySearch, pageable);

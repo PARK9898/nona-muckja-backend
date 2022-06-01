@@ -1,8 +1,9 @@
 package io.nonamuckja.backend.service;
 
-import javax.transaction.Transactional;
+
 
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import io.nonamuckja.backend.domain.user.User;
 import io.nonamuckja.backend.domain.user.UserRepository;
